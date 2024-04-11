@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 
 
 
-mongoose.connect("mongodb+srv://admin:qfTiSwCEpOAAyLME@backenddb.xybwmgp.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB")
+mongoose.connect("mongodb+srv://admin:<password>@backenddb.xybwmgp.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB")
     .then(() => {
         console.log("Connected to database");
         app.listen(3000, () => {
